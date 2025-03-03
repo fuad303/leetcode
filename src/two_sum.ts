@@ -1,13 +1,12 @@
-// Input: nums = [2,7,11,15], target = 9
-let nums = [2, 7, 11, 15];
-function findSumOfTwo(target: number) {
-  for (let i = 0; i < nums.length; i++) {
-    for (let j = i + 1; j < nums.length; j++) {
-      if (nums[i] + nums[j] === target) {
-        return [i, j];
-      }
+let arry = [1, 2, 3, 4, 5];
+function twoSum(target: number) {
+  for (let i = 0; i < arry.length; i++) {
+    for (let j = i + 1; j < arry.length; j++) {
+      if (arry[i] + arry[j] === target) return [i, j];
     }
   }
   return [];
 }
-console.log(findSumOfTwo(18));
+let target = 7;
+
+console.log(twoSum(target));
